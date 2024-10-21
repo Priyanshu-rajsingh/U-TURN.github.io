@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - U TURN</title>
+    <link rel="stylesheet" href="/U_TURN_Project/styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        #login {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            width: 300px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            animation: glow 2s infinite;
+        }
+
+        #login h2 {
+            margin-bottom: 20px;
+            color: #ffffff;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        }
+
+        #login input[type="email"],
+        #login input[type="password"] {
+            width: calc(100% - 20px); /* Adjust width to account for padding */
+            padding: 10px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.2);
+            color: #ffffff;
+            transition: background-color 0.3s;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+            text-align: center; /* Center align text */
+        }
+
+        #login input[type="email"]:focus,
+        #login input[type="password"]:focus {
+            background-color: rgba(255, 255, 255, 0.3);
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        }
+
+        #login button {
+            background-color: #35424a;
+            color: #ffffff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            width: 100%;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+        }
+
+        #login button:hover {
+            background-color: #2c3e50;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        }
+
+        #login p {
+            margin-top: 15px;
+            color: #ffffff;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+        }
+
+        #login a {
+            color: #ffffff;
+            text-decoration: underline;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+        }
+
+        /* Glow effect */
+        @keyframes glow {
+            0% {
+                box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+            }
+            50% {
+                box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+            }
+            100% {
+                box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+            }
+        }
+
+        /* Color Themes */
+        .theme1 {
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+        }
+
+        .theme2 {
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+        }
+
+        .theme3 {
+            background: linear-gradient(to right, #00c6ff, #0072ff);
+        }
+        .theme5 {
+            background: linear-gradient(to right, #ffafbd, #ffc3a0);
+        }
+    </style>
+</head>
+<body>
+    <div id="login" class="theme1">
+        <h2>Login</h2>
+        <form id="loginForm" onsubmit="return validateForm()">
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+        <p>Don't have an account? <a href="register.html">Register here</a></p>
+        <button onclick="changeTheme()">Change Theme</button>
+    </div>
+
+    <script>
+        function validateForm() {
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            if (email === "" || password === "") {
+                alert("Please fill in all fields.");
+                return false;
+            }
+            return true; // Allow form submission
+        }
+
+        let currentTheme = 1;
+
+        function changeTheme() {
+            const themes = ['theme1', 'theme2', 'theme3', 'theme4', 'theme5'];
+            currentTheme = (currentTheme % themes.length) + 1; // Cycle through themes
+            const loginDiv = document.getElementById('login');
+            themes.forEach(theme => loginDiv.classList.remove(theme));
+            loginDiv.classList.add(`theme${currentTheme}`);
+        }
+    </script>
+</body>
+</html>
