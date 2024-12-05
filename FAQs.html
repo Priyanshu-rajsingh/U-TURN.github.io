@@ -1,0 +1,363 @@
+<html>
+  <head>
+    <title>U Turn - FAQs</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Open Sans", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <header
+        class="bg-green-600 text-white p-4 flex justify-between items-center"
+      >
+        <h1 class="text-2xl font-bold">U Turn</h1>
+        <nav>
+          <ul class="flex space-x-4">
+            <li><a class="hover:underline" href="index.html">Home</a></li>
+            <li><a class="hover:underline" href="AboutUs.html">About Us</a></li>
+            <li>
+              <a class="hover:underline" href="ContactUs.html">Contact Us</a>
+            </li>
+            <li><a class="hover:underline" href="FAQs.html">FAQs</a></li>
+          </ul>
+        </nav>
+        <div>
+          <button
+            class="bg-white text-green-600 px-4 py-2 rounded"
+            onclick="window.location.href='Login.html'"
+          >
+            Login
+          </button>
+          <button
+            class="bg-white text-green-600 px-4 py-2 rounded"
+            onclick="window.location.href='SignUp.html'"
+          >
+            Sign Up
+          </button>
+        </div>
+      </header>
+      <section class="bg-gray-100 py-16">
+        <div class="container mx-auto px-6 md:px-12 lg:px-20">
+          <h2 class="text-3xl font-bold text-center text-green-600 mb-8">
+            Frequently Asked Questions
+          </h2>
+          <p class="text-center text-gray-700 mb-12">
+            Here are answers to some common questions about U Turn. If you need
+            more help, feel free to
+            <a href="ContactUs.html" class="text-green-600">contact us</a>.
+          </p>
+          <!-- FAQ Items -->
+          <div class="space-y-6">
+            <!-- FAQ 1 -->
+            <div class="bg-white p-6 rounded shadow">
+              <button
+                class="w-full text-left flex justify-between items-center focus:outline-none focus:ring focus:ring-green-300"
+                onclick="toggleFAQ(1)"
+              >
+                <span class="text-gray-700 font-medium">What is U Turn?</span>
+                <span id="icon-1" class="text-green-600">+</span>
+              </button>
+              <div id="answer-1" class="mt-2 hidden text-gray-600">
+                U Turn is a platform that connects waste sellers and buyers to
+                promote recycling and sustainability.
+              </div>
+            </div>
+
+            <!-- FAQ 2 -->
+            <div class="bg-white p-6 rounded shadow">
+              <button
+                class="w-full text-left flex justify-between items-center focus:outline-none focus:ring focus:ring-green-300"
+                onclick="toggleFAQ(2)"
+              >
+                <span class="text-gray-700 font-medium"
+                  >How does U Turn work?</span
+                >
+                <span id="icon-2" class="text-green-600">+</span>
+              </button>
+              <div id="answer-2" class="mt-2 hidden text-gray-600">
+                Sellers list their waste, buyers browse available listings, and
+                both parties finalize transactions securely through the
+                platform.
+              </div>
+            </div>
+
+            <!-- FAQ 3 -->
+            <div class="bg-white p-6 rounded shadow">
+              <button
+                class="w-full text-left flex justify-between items-center focus:outline-none focus:ring focus:ring-green-300"
+                onclick="toggleFAQ(3)"
+              >
+                <span class="text-gray-700 font-medium"
+                  >Is U Turn free to use?</span
+                >
+                <span id="icon-3" class="text-green-600">+</span>
+              </button>
+              <div id="answer-3" class="mt-2 hidden text-gray-600">
+                Yes, U Turn is free for basic usage. Premium features, if any,
+                may be subject to additional charges.
+              </div>
+            </div>
+
+            <!-- FAQ 4 -->
+            <div class="bg-white p-6 rounded shadow">
+              <button
+                class="w-full text-left flex justify-between items-center focus:outline-none focus:ring focus:ring-green-300"
+                onclick="toggleFAQ(4)"
+              >
+                <span class="text-gray-700 font-medium"
+                  >How do I list my waste materials?</span
+                >
+                <span id="icon-4" class="text-green-600">+</span>
+              </button>
+              <div id="answer-4" class="mt-2 hidden text-gray-600">
+                After signing up, go to your profile and click on "List Your
+                Waste" to add details about the waste materials you want to
+                sell.
+              </div>
+            </div>
+
+            <!-- FAQ 5 -->
+            <div class="bg-white p-6 rounded shadow">
+              <button
+                class="w-full text-left flex justify-between items-center focus:outline-none focus:ring focus:ring-green-300"
+                onclick="toggleFAQ(5)"
+              >
+                <span class="text-gray-700 font-medium"
+                  >How do I find buyers for my waste?</span
+                >
+                <span id="icon-5" class="text-green-600">+</span>
+              </button>
+              <div id="answer-5" class="mt-2 hidden text-gray-600">
+                Once you list your waste materials, potential buyers can view
+                your listing and contact you through the platform.
+              </div>
+            </div>
+
+            <!-- FAQ 6 -->
+            <div class="bg-white p-6 rounded shadow">
+              <button
+                class="w-full text-left flex justify-between items-center focus:outline-none focus:ring focus:ring-green-300"
+                onclick="toggleFAQ(6)"
+              >
+                <span class="text-gray-700 font-medium"
+                  >Is my information secure?</span
+                >
+                <span id="icon-6" class="text-green-600">+</span>
+              </button>
+              <div id="answer-6" class="mt-2 hidden text-gray-600">
+                Yes, we prioritize the security of your information and ensure
+                that all transactions are conducted safely on our platform.
+              </div>
+            </div>
+
+            <!-- FAQ 7 -->
+            <div class="bg-white p-6 rounded shadow">
+              <button
+                class="w-full text-left flex justify-between items-center focus:outline-none focus:ring focus:ring-green-300"
+                onclick="toggleFAQ(7)"
+              >
+                <span class="text-gray-700 font-medium"
+                  >Can I track my environmental impact?</span
+                >
+                <span id="icon-7" class="text-green-600">+</span>
+              </button>
+              <div id="answer-7" class="mt-2 hidden text-gray-600">
+                Yes, U Turn provides tools to help you track the positive impact
+                of your recycling efforts on the environment.
+              </div>
+            </div>
+
+            <!-- FAQ 8 -->
+            <div class="bg-white p-6 rounded shadow">
+              <button
+                class="w-full text-left flex justify-between items-center focus:outline-none focus:ring focus:ring-green-300"
+                onclick="toggleFAQ(8)"
+              >
+                <span class="text-gray-700 font-medium"
+                  >How do I contact customer support?</span
+                >
+                <span id="icon-8" class="text-green-600">+</span>
+              </button>
+              <div id="answer-8" class="mt-2 hidden text-gray-600">
+                You can contact our customer support team by clicking on the
+                "Contact Us" link in the navigation menu.
+              </div>
+            </div>
+
+            <!-- FAQ 9 -->
+            <div class="bg-white p-6 rounded shadow">
+              <button
+                class="w-full text-left flex justify-between items-center focus:outline-none focus:ring focus:ring-green-300"
+                onclick="toggleFAQ(9)"
+              >
+                <span class="text-gray-700 font-medium"
+                  >What types of waste can I list on U Turn?</span
+                >
+                <span id="icon-9" class="text-green-600">+</span>
+              </button>
+              <div id="answer-9" class="mt-2 hidden text-gray-600">
+                You can list various types of waste including plastics, metals,
+                e-waste, paper, organic waste, and textiles.
+              </div>
+            </div>
+
+            <!-- FAQ 10 -->
+            <div class="bg-white p-6 rounded shadow">
+              <button
+                class="w-full text-left flex justify-between items-center focus:outline-none focus:ring focus:ring-green-300"
+                onclick="toggleFAQ(10)"
+              >
+                <span class="text-gray-700 font-medium"
+                  >How do I edit or delete my waste listing?</span
+                >
+                <span id="icon-10" class="text-green-600">+</span>
+              </button>
+              <div id="answer-10" class="mt-2 hidden text-gray-600">
+                You can edit or delete your waste listing by going to your
+                profile, finding the listing, and selecting the appropriate
+                option.
+              </div>
+            </div>
+
+            <!-- FAQ 11 -->
+            <div class="bg-white p-6 rounded shadow">
+              <button
+                class="w-full text-left flex justify-between items-center focus:outline-none focus:ring focus:ring-green-300"
+                onclick="toggleFAQ(11)"
+              >
+                <span class="text-gray-700 font-medium"
+                  >Can I rate buyers and sellers?</span
+                >
+                <span id="icon-11" class="text-green-600">+</span>
+              </button>
+              <div id="answer-11" class="mt-2 hidden text-gray-600">
+                Yes, you can rate buyers and sellers after completing a
+                transaction to help maintain a trustworthy community.
+              </div>
+            </div>
+
+            <!-- FAQ 12 -->
+            <div class="bg-white p-6 rounded shadow">
+              <button
+                class="w-full text-left flex justify-between items-center focus:outline-none focus:ring focus:ring-green-300"
+                onclick="toggleFAQ(12)"
+              >
+                <span class="text-gray-700 font-medium"
+                  >What should I do if I encounter a problem with a
+                  transaction?</span
+                >
+                <span id="icon-12" class="text-green-600">+</span>
+              </button>
+              <div id="answer-12" class="mt-2 hidden text-gray-600">
+                If you encounter a problem with a transaction, you can contact
+                our customer support team for assistance.
+              </div>
+            </div>
+
+            <!-- FAQ 13 -->
+            <div class="bg-white p-6 rounded shadow">
+              <button
+                class="w-full text-left flex justify-between items-center focus:outline-none focus:ring focus:ring-green-300"
+                onclick="toggleFAQ(13)"
+              >
+                <span class="text-gray-700 font-medium"
+                  >How do I reset my password?</span
+                >
+                <span id="icon-13" class="text-green-600">+</span>
+              </button>
+              <div id="answer-13" class="mt-2 hidden text-gray-600">
+                You can reset your password by clicking on the "Forgot Password"
+                link on the login page and following the instructions.
+              </div>
+            </div>
+
+            <!-- FAQ 14 -->
+            <div class="bg-white p-6 rounded shadow">
+              <button
+                class="w-full text-left flex justify-between items-center focus:outline-none focus:ring focus:ring-green-300"
+                onclick="toggleFAQ(14)"
+              >
+                <span class="text-gray-700 font-medium"
+                  >Can I use U Turn on my mobile device?</span
+                >
+                <span id="icon-14" class="text-green-600">+</span>
+              </button>
+              <div id="answer-14" class="mt-2 hidden text-gray-600">
+                Yes, U Turn is fully responsive and can be used on any mobile
+                device.
+              </div>
+            </div>
+
+            <!-- FAQ 15 -->
+            <div class="bg-white p-6 rounded shadow">
+              <button
+                class="w-full text-left flex justify-between items-center focus:outline-none focus:ring focus:ring-green-300"
+                onclick="toggleFAQ(15)"
+              >
+                <span class="text-gray-700 font-medium"
+                  >How do I update my profile information?</span
+                >
+                <span id="icon-15" class="text-green-600">+</span>
+              </button>
+              <div id="answer-15" class="mt-2 hidden text-gray-600">
+                You can update your profile information by going to your profile
+                settings and making the necessary changes.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="bg-green-600 text-white py-8">
+        <div class="container mx-auto text-center">
+          <div class="mb-4">
+            <a class="hover:underline mx-2" href="AboutUs.html">About Us</a>
+            <a class="hover:underline mx-2" href="ContactUs.html">Contact Us</a>
+            <a class="hover:underline mx-2" href="FAQs.html">FAQs</a>
+            <a class="hover:underline mx-2" href="PrivacyPolicy.html"
+              >Privacy Policy</a
+            >
+            <a class="hover:underline mx-2" href="TandC.html"
+              >Terms & Conditions</a
+            >
+          </div>
+          <div class="mb-4">
+            <a class="hover:underline mx-2" href="#"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a class="hover:underline mx-2" href="#"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a class="hover:underline mx-2" href="#"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </div>
+          <p>© 2023 U Turn. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+    <script>
+      function toggleFAQ(id) {
+        const answer = document.getElementById(`answer-${id}`);
+        const icon = document.getElementById(`icon-${id}`);
+        if (answer.classList.contains("hidden")) {
+          answer.classList.remove("hidden");
+          icon.textContent = "-";
+        } else {
+          answer.classList.add("hidden");
+          icon.textContent = "+";
+        }
+      }
+    </script>
+  </body>
+</html>

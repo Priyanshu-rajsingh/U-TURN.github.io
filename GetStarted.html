@@ -1,0 +1,86 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Get Started - U Turn</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+    <style>
+      body {
+        font-family: "Open Sans", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <header class="bg-green-600 text-white p-4 flex justify-between items-center">
+        <h1 class="text-2xl font-bold">U Turn</h1>
+        <nav>
+          <ul class="flex space-x-4">
+            <li><a class="hover:underline" href="index.html">Home</a></li>
+            <li><a class="hover:underline" href="AboutUs.html">About Us</a></li>
+            <li><a class="hover:underline" href="ContactUs.html">Contact Us</a></li>
+            <li><a class="hover:underline" href="FAQs.html">FAQs</a></li>
+          </ul>
+        </nav>
+        <div>
+          <button aria-label="Logout" class="bg-white text-green-600 px-4 py-2 rounded hover:bg-gray-200" onclick="window.location.href='Logout.html';">Logout</button>
+        </div>
+      </header>
+
+      <!-- Get Started Section -->
+      <section class="get-started py-16 bg-gray-100">
+        <div class="container mx-auto text-center">
+          <h3 class="text-3xl font-bold mb-8">How to Get Started with U Turn</h3>
+          <p class="text-lg mb-8">Follow these simple steps to begin buying and selling waste materials efficiently.</p>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Step 1 -->
+            <div class="step bg-white p-6 rounded shadow hover:shadow-lg transition-shadow">
+              <i class="fas fa-user-plus text-green-600 text-4xl mb-4"></i>
+              <h4 class="text-xl font-semibold mb-2">Step 1: Sign Up</h4>
+              <p>Create an account and complete your profile to get started.</p>
+              <button class="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700 mt-4" onclick="window.location.href='SignUp.html';">Sign Up Now</button>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="step bg-white p-6 rounded shadow hover:shadow-lg transition-shadow">
+              <i class="fas fa-recycle text-green-600 text-4xl mb-4"></i>
+              <h4 class="text-xl font-semibold mb-2">Step 2: List or Find Waste</h4>
+              <p>Browse available waste listings or list your waste materials for sale.</p>
+              <button class="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700 mt-4" onclick="window.location.href='BuyWaste.html';">Browse Listings</button>
+              <button class="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700 mt-4" onclick="window.location.href='SellWaste.html';">List Your Waste</button>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="step bg-white p-6 rounded shadow hover:shadow-lg transition-shadow">
+              <i class="fas fa-handshake text-green-600 text-4xl mb-4"></i>
+              <h4 class="text-xl font-semibold mb-2">Step 3: Negotiate & Transact</h4>
+              <p>Connect with buyers or sellers and complete secure transactions.</p>
+              <button class="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700 mt-4" onclick="window.location.href='Transactions.html';">Learn More</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="bg-green-600 text-white py-8">
+        <div class="container mx-auto text-center">
+          <div class="mb-4">
+            <a class="hover:underline mx-2" href="AboutUs.html">About Us</a>
+            <a class="hover:underline mx-2" href="ContactUs.html">Contact Us</a>
+            <a class="hover:underline mx-2" href="FAQs.html">FAQs</a>
+            <a class="hover:underline mx-2" href="PrivacyPolicy.html">Privacy Policy</a>
+            <a class="hover:underline mx-2" href="TandC.html">Terms & Conditions</a>
+          </div>
+          <div class="mb-4">
+            <a class="hover:underline mx-2" href="#"><i class="fab fa-instagram"></i> Follow us on Instagram</a>
+            <a class="hover:underline mx-2" href="#"><i class="fab fa-twitter"></i> Follow us on Twitter</a>
+            <a class="hover:underline mx-2" href="#"><i class="fab fa-facebook"></i> Like us on Facebook</a>
+          </div>
+          <p>&copy; 2024 U Turn. All Rights Reserved.</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

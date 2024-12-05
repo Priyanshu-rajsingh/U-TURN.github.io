@@ -1,0 +1,134 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>User Profile - U Turn</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+    <style>
+      body {
+        font-family: "Open Sans", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <header class="bg-green-600 text-white p-4 flex justify-between items-center">
+        <h1 class="text-2xl font-bold">U Turn</h1>
+        <nav>
+          <ul class="flex space-x-4">
+            <li><a class="hover:underline" href="index.html">Home</a></li>
+            <li><a class="hover:underline" href="AboutUs.html">About Us</a></li>
+            <li><a class="hover:underline" href="ContactUs.html">Contact Us</a></li>
+            <li><a class="hover:underline" href="FAQs.html">FAQs</a></li>
+          </ul>
+        </nav>
+        <div>
+          <button aria-label="Logout" class="bg-white text-green-600 px-4 py-2 rounded hover:bg-gray-200" onclick="window.location.href='Logout.html';">Logout</button>
+        </div>
+      </header>
+
+      <!-- Profile Section -->
+      <section class="profile py-16 bg-gray-100">
+        <div class="container mx-auto text-center">
+          <h3 class="text-3xl font-bold mb-8">Welcome, [User Name]</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Profile Option -->
+            <div class="option bg-white p-6 rounded shadow hover:shadow-lg transition-shadow">
+              <i class="fas fa-user-circle text-green-600 text-4xl mb-4"></i>
+              <h4 class="text-xl font-semibold mb-2">Profile</h4>
+              <p>Manage your profile details.</p>
+              <button class="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700 mt-4" onclick="window.location.href='ProfileDetails.html';">Edit Profile</button>
+            </div>
+
+            <!-- Buy Waste Option -->
+            <div class="option bg-white p-6 rounded shadow hover:shadow-lg transition-shadow">
+              <i class="fas fa-cart-plus text-green-600 text-4xl mb-4"></i>
+              <h4 class="text-xl font-semibold mb-2">Buy Waste</h4>
+              <p>Find available waste materials to purchase.</p>
+              <button class="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700 mt-4" onclick="window.location.href='BuyWaste.html';">Browse Waste Listings</button>
+            </div>
+
+            <!-- Sell Waste Option -->
+            <div class="option bg-white p-6 rounded shadow hover:shadow-lg transition-shadow">
+              <i class="fas fa-dollar-sign text-green-600 text-4xl mb-4"></i>
+              <h4 class="text-xl font-semibold mb-2">Sell Waste</h4>
+              <p>List your waste materials for sale.</p>
+              <button class="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700 mt-4" onclick="window.location.href='SellWaste.html';">List Your Waste</button>
+            </div>
+
+            <!-- Newsletters Option -->
+            <div class="option bg-white p-6 rounded shadow hover:shadow-lg transition-shadow">
+              <i class="fas fa-envelope text-green-600 text-4xl mb-4"></i>
+              <h4 class="text-xl font-semibold mb-2">Newsletters</h4>
+              <p>Stay updated with the latest news and updates.</p>
+              <button class="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700 mt-4" onclick="window.location.href='NewsletterSubscription.html';">Subscribe Now</button>
+            </div>
+
+            <!-- Contact Us Option -->
+            <div class="option bg-white p-6 rounded shadow hover:shadow-lg transition-shadow">
+              <i class="fas fa-phone-alt text-green-600 text-4xl mb-4"></i>
+              <h4 class="text-xl font-semibold mb-2">Contact Us</h4>
+              <p>If you need help, feel free to reach out.</p>
+              <button class="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700 mt-4" onclick="window.location.href='ContactSupport.html';">Contact Support</button>
+            </div>
+
+            <!-- Get Started Option -->
+            <div class="option bg-white p-6 rounded shadow hover:shadow-lg transition-shadow">
+              <i class="fas fa-play-circle text-green-600 text-4xl mb-4"></i>
+              <h4 class="text-xl font-semibold mb-2">Get Started</h4>
+              <p>Learn how to buy and sell waste efficiently.</p>
+              <button class="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700 mt-4" onclick="window.location.href='GetStarted.html';">Start Now</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- How the Process Works Section -->
+      <section class="how-it-works py-16">
+        <div class="container mx-auto text-center">
+          <h3 class="text-3xl font-bold mb-8">How the Process Works</h3>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="step bg-white p-6 rounded shadow hover:shadow-lg transition-shadow">
+              <i class="fas fa-user-plus text-green-600 text-4xl mb-4"></i>
+              <h4 class="text-xl font-semibold mb-2">Step 1: Sign Up</h4>
+              <p>Create your account and complete your profile.</p>
+            </div>
+
+            <div class="step bg-white p-6 rounded shadow hover:shadow-lg transition-shadow">
+              <i class="fas fa-recycle text-green-600 text-4xl mb-4"></i>
+              <h4 class="text-xl font-semibold mb-2">Step 2: List or Find Waste</h4>
+              <p>List your waste or browse waste listings from sellers.</p>
+            </div>
+
+            <div class="step bg-white p-6 rounded shadow hover:shadow-lg transition-shadow">
+              <i class="fas fa-handshake text-green-600 text-4xl mb-4"></i>
+              <h4 class="text-xl font-semibold mb-2">Step 3: Connect & Transact</h4>
+              <p>Negotiate and complete secure transactions on the platform.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="bg-green-600 text-white py-8">
+        <div class="container mx-auto text-center">
+          <div class="mb-4">
+            <a class="hover:underline mx-2" href="AboutUs.html">About Us</a>
+            <a class="hover:underline mx-2" href="ContactUs.html">Contact Us</a>
+            <a class="hover:underline mx-2" href="FAQs.html">FAQs</a>
+            <a class="hover:underline mx-2" href="PrivacyPolicy.html">Privacy Policy</a>
+            <a class="hover:underline mx-2" href="TandC.html">Terms & Conditions</a>
+          </div>
+          <div class="mb-4">
+            <a class="hover:underline mx-2" href="#"><i class="fab fa-instagram"></i> Follow us on Instagram</a>
+            <a class="hover:underline mx-2" href="#"><i class="fab fa-twitter"></i> Follow us on Twitter</a>
+            <a class="hover:underline mx-2" href="#"><i class="fab fa-facebook"></i> Like us on Facebook</a>
+          </div>
+          <p>&copy; 2024 U Turn. All Rights Reserved.</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

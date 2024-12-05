@@ -1,0 +1,84 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Edit Profile - U Turn</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+    <style>
+      body {
+        font-family: "Open Sans", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <header class="bg-green-600 text-white p-4 flex justify-between items-center">
+        <h1 class="text-2xl font-bold">U Turn</h1>
+        <nav>
+          <ul class="flex space-x-4">
+            <li><a class="hover:underline" href="index.html">Home</a></li>
+            <li><a class="hover:underline" href="AboutUs.html">About Us</a></li>
+            <li><a class="hover:underline" href="ContactUs.html">Contact Us</a></li>
+            <li><a class="hover:underline" href="FAQs.html">FAQs</a></li>
+          </ul>
+        </nav>
+        <div>
+          <button aria-label="Logout" class="bg-white text-green-600 px-4 py-2 rounded hover:bg-gray-200" onclick="window.location.href='Logout.html';">Logout</button>
+        </div>
+      </header>
+
+      <!-- Edit Profile Section -->
+      <section class="edit-profile py-16 bg-gray-100">
+        <div class="container mx-auto max-w-4xl">
+          <h3 class="text-3xl font-bold text-center mb-8">Edit Your Profile</h3>
+          <form action="#" method="POST" class="bg-white p-8 rounded shadow-md">
+            <div class="mb-6">
+              <label for="username" class="block text-sm font-semibold text-gray-700">Full Name</label>
+              <input type="text" id="username" name="username" value="[User Name]" class="w-full p-3 mt-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500" required />
+            </div>
+
+            <div class="mb-6">
+              <label for="email" class="block text-sm font-semibold text-gray-700">Email Address</label>
+              <input type="email" id="email" name="email" value="[User Email]" class="w-full p-3 mt-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500" required />
+            </div>
+
+            <div class="mb-6">
+              <label for="phone" class="block text-sm font-semibold text-gray-700">Phone Number</label>
+              <input type="text" id="phone" name="phone" value="[User Phone]" class="w-full p-3 mt-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500" />
+            </div>
+
+            <div class="mb-6">
+              <label for="profile-picture" class="block text-sm font-semibold text-gray-700">Profile Picture</label>
+              <input type="file" id="profile-picture" name="profile-picture" class="w-full p-3 mt-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500" />
+            </div>
+
+            <div class="flex justify-center mt-8">
+              <button type="submit" class="bg-green-600 text-white px-6 py-3 rounded hover:bg-green-700">Save Changes</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="bg-green-600 text-white py-8">
+        <div class="container mx-auto text-center">
+          <div class="mb-4">
+            <a class="hover:underline mx-2" href="AboutUs.html">About Us</a>
+            <a class="hover:underline mx-2" href="ContactUs.html">Contact Us</a>
+            <a class="hover:underline mx-2" href="FAQs.html">FAQs</a>
+            <a class="hover:underline mx-2" href="PrivacyPolicy.html">Privacy Policy</a>
+            <a class="hover:underline mx-2" href="TandC.html">Terms & Conditions</a>
+          </div>
+          <div class="mb-4">
+            <a class="hover:underline mx-2" href="#"><i class="fab fa-instagram"></i> Follow us on Instagram</a>
+            <a class="hover:underline mx-2" href="#"><i class="fab fa-twitter"></i> Follow us on Twitter</a>
+            <a class="hover:underline mx-2" href="#"><i class="fab fa-facebook"></i> Like us on Facebook</a>
+          </div>
+          <p>&copy; 2024 U Turn. All Rights Reserved.</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
